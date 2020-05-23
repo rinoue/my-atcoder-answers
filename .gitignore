@@ -356,3 +356,5 @@ test*.txt
 
 #vscode
 .vscode
+properties/assemblyinfo.cs
+.DS_Store

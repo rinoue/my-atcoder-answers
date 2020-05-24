@@ -7,21 +7,22 @@ using System.IO;
 using System.Text;
 using System.Globalization;
 
-public class Hello
+public class AtCoder
 {
-    public static void Main()
-    {
-        var S = Console.ReadLine().Trim();
-        var splitedArray = Console.ReadLine().Trim().Split();
-        var M = int.Parse(Console.ReadLine().Trim());
-        var N = int.Parse(Console.ReadLine().Trim());
-        var M = int.Parse(splitedArray.First());
-        var N = int.Parse(splitedArray.Last());        
-        var M = int.Parse(splitedArray[0]);
-        var N = int.Parse(splitedArray[1]);        
+  public static void Main()
+  {
+    var S = Console.ReadLine().Trim();
+    var splited = Console.ReadLine().Trim().Split();
+    var splited = Console.ReadLine().Trim().Split().Select(e => int.Parse(e)).ToArray();
+    var a = splited[0];
+    var b = splited[1];
+    var c = splited[2];
+    var d = splited[3];
+    var M = int.Parse(Console.ReadLine().Trim());
+    var N = int.Parse(Console.ReadLine().Trim());
 
 
-        var ans  = "";
-        Console.WriteLine(ans);
-   }
+    var ans = "";
+    Console.WriteLine(ans);
+  }
 }
